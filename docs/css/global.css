@@ -1,0 +1,198 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-shiraz: #aa0630;
+  --color-shiraz-gradient: linear-gradient(180deg, #D33A61 0%, #AA0630 100%);
+  --color-silver: #c4c4c4;
+  --color-athensGray: #f1f0f5;
+  --color-footer: #e9e8ee;
+  --font-family-title: "Lifehack", sans-serif;
+  --font-title: 400 60px / 130% var(--font-family-title);
+  --font-title-medium: 400 48px / 100% var(--font-family-title);
+  --font-secondtitle: 400 32px / 100% var(--font-family-title);
+  --font-subtitle: 400 28px / 100% var(--font-family-title);
+  --font-secondsubtitle: 400 24px / 100% var(--font-family-title);
+  --font-title-footer: 400 20px / 100% var(--font-family-title);
+  --font-family: "Rubik", sans-serif;
+  --font-price: 700 32px / 100% var(--font-family);
+  --font-text-medium: 500 32px / 100% var(--font-family);
+  --font-num-medium: 500 24px / 100% var(--font-family);
+  --font-text-tel: 700 24px / 100% var(--font-family);
+  --font-text-light: 300 20px / 150% var(--font-family);
+  --font-text-bold: 700 18px / 100% var(--font-family);
+  --font-menu: 400 16px / 100% var(--font-family);
+  --font-menu-text: 400 15px / 150% var(--font-family);
+  --font-text: 400 14px / 150% var(--font-family);
+  --font-text-date: 400 12px / 150% var(--font-family); }
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/../fonts/Rubik-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Lifehack";
+  src: url("../fonts/../fonts/Lifehack.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--color-white); }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.site-container {
+  overflow: hidden; }
+
+.is-hidden {
+  display: none !important; }
+
+.for-mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .for-mobile {
+      display: block; } }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1350px; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+.custom-checkbox {
+  position: relative; }
+  .custom-checkbox__field {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute; }
+  .custom-checkbox__content {
+    padding-left: 25px;
+    cursor: pointer; }
+    .custom-checkbox__content::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #000;
+      width: 15px;
+      height: 15px;
+      box-sizing: border-box; }
+    .custom-checkbox__content::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 15px;
+      height: 15px;
+      box-sizing: border-box;
+      background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='fi_32282' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='405.272px' height='405.272px' viewBox='0 0 405.272 405.272' style='enable-background:new 0 0 405.272 405.272;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M393.401,124.425L179.603,338.208c-15.832,15.835-41.514,15.835-57.361,0L11.878,227.836 c-15.838-15.835-15.838-41.52,0-57.358c15.841-15.841,41.521-15.841,57.355-0.006l81.698,81.699L336.037,67.064 c15.841-15.841,41.523-15.829,57.358,0C409.23,82.902,409.23,108.578,393.401,124.425z'%3E%3C/path%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+      background-position: center;
+      background-size: 10px 10px;
+      background-repeat: no-repeat;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out; }
+  .custom-checkbox__content {
+    padding-left: 35px;
+    padding-right: 30px;
+    font: var(--font-menu);
+    color: var(--color-shiraz); }
+    .custom-checkbox__content::before {
+      top: -5px;
+      border-color: var(--color-silver);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px; }
+    .custom-checkbox__content::after {
+      top: -5px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      border: 5px solid var(--color-shiraz);
+      background: none; }
+
+@media (max-width: 545px) {
+  .custom-checkbox__content::before {
+    width: 22px;
+    height: 22px; }
+  .custom-checkbox__content::after {
+    width: 22px;
+    height: 22px; } }
+
+/*# sourceMappingURL=global.css.map */

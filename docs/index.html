@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Особенный наполеон</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="site-container">
+    <div class="overlay"></div>
+<header class="header">
+  <div class="container header__container">
+    <a href="#" class="logo">
+      <img src="img/logo.svg" alt="Логотип">
+    </a>
+    <nav class="nav header__nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Наполеон</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Медовик</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Эклеры</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="burger" aria-label="Открыть меню">
+      <span></span>
+    </button>
+    <div class="cart header__cart">
+      <button class="btn-reset cart__btn">
+        <svg>
+          <use xlink:href="img/sprite.svg#phone"> </use>
+        </svg>
+      </button>
+      <button class="btn-reset cart__btn">
+        <svg>
+          <use xlink:href="img/sprite.svg#cart"> </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <section class="intro">
+  <div class="intro__container container">
+    <div class="intro__desc">
+      <h1 class="title intro__title">Натуральные торты ручной работы</h1>
+      <p class="intro__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
+        <a href="#" class="intro__btn btn-reset">В каталог</a>
+    </div>
+    <div class="intro__img">
+      <img src="img/women.jpg" alt="Татьяна Варламова">
+      <span class="intro__img-text">Шеф-кондитер Татьяна Варламова</span>
+    </div>
+    <div class="intro__social">
+      <a href="#" class="intro__social-link">
+        <svg>
+          <use xlink:href="img/sprite.svg#youtube"> </use>
+        </svg>
+      </a>
+      <a href="#" class="intro__social-link">
+        <svg>
+          <use xlink:href="img/sprite.svg#insta"> </use>
+        </svg>
+      </a>
+      <a href="#" class="intro__social-link">
+        <svg>
+          <use xlink:href="img/sprite.svg#vk"> </use>
+        </svg>
+      </a>
+      <a href="#" class="intro__social-link">
+        <svg>
+          <use xlink:href="img/sprite.svg#whatsapp"> </use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <section class="product">
+  <div class="product__container container">
+    <div class="product__wrapper">
+      <h2 class="title">Наполеон</h2>
+      <div class="slider-container-2" data-mobile="false">
+        <div class="product__items swiper-wrapper">
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="product__btn btn-reset">Показать еще</button>
+    </div>
+    <div class="product__wrapper">
+      <h2 class="title">Наполеон</h2>
+      <div class="slider-container-1" data-mobile="false">
+        <div class="product__items swiper-wrapper">
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="product__btn btn-reset">Показать еще</button>
+    </div>
+    <div class="product__wrapper">
+      <h2 class="title">Наполеон</h2>
+      <div class="slider-container" data-mobile="false">
+        <div class="product__items swiper-wrapper">
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="product__item-img">
+              <img src="img/napoleon.png" alt="Наполеон">
+            </div>
+            <div class="product__item-desc">
+              <h3 class="product__item-title">Наполеон с ягодой</h3>
+              <span class="product__item-text">Готовим из слоеного теста с ванильно-сливочным заварным кремом с
+                мороженым
+                пломбир и украшаем свежей ягодой.</span>
+              <div class="product__item-sale mob-none">
+                <span>1050 Р / 1 кг</span>
+                <button class="product__item-btn btn btn-reset">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#plus"> </use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__item-sale-mob">
+                <div class="catalog__prop-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">1.5 кг</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="radio" name="wt" class="custom-checkbox__field">
+                    <span class="custom-checkbox__content">2 кг</span>
+                  </label>
+                  <strong class="catalog__caption">967 р</strong>
+                </div>
+                <div class="card__desc-bottom">
+                  <div class="counter">
+                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                    <input type="number" min="0" max="100" value="1" readonly class="card__num">
+                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                  </div>
+                  <button class="intro__btn btn-reset">В корзину</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="product__btn btn-reset">Показать еще</button>
+    </div>
+  </div>
+</section>
+
+    <section class="benefit">
+  <div class="benefit__container container">
+    <h2 class="benefit__title title">Баланс качества и вкуса</h2>
+    <div class="benefit__wrapper">
+      <div class="benefit__items">
+        <div class="benefit__item benefit__item--ml">
+          <div class="benefit__item-img">
+            <img src="img/ben-3.svg" alt="Бережное отношение">
+          </div>
+          <div class="benefit__item-desc">
+            <h3 class="benefit__item-title">Бережное отношение</h3>
+            <p class="benefit__item-text">Мы&nbsp;заботимся об&nbsp;экологичности и&nbsp;сохранности продуктов на&nbsp;всех этапах работы</p>
+          </div>
+        </div>
+        <div class="benefit__item">
+          <div class="benefit__item-img">
+            <img src="img/ben-4.svg" alt="Любой вкус и аромат">
+          </div>
+          <div class="benefit__item-desc">
+            <h3 class="benefit__item-title">Любой вкус и аромат</h3>
+            <p class="benefit__item-text">Большой ассортимент тортов для всех&nbsp;&mdash; от&nbsp;садкоежек до&nbsp;настоящего гурмана</p>
+          </div>
+        </div>
+        <div class="benefit__item benefit__item--ml benefit__item--width">
+          <div class="benefit__item-img">
+            <img src="img/ben-2.svg" alt="Сертификаты качества">
+          </div>
+          <div class="benefit__item-desc">
+            <h3 class="benefit__item-title">Сертификаты качества</h3>
+            <p class="benefit__item-text">Вы&nbsp;можете ознакомиться со&nbsp;всеми сертификатами качества и&nbsp;соответствия наших продуктов</p>
+          </div>
+        </div>
+      </div>
+      <div class="benefit__items benefit__items--border">
+        <img src="img/benefit-bg.png" alt="Торт">
+      </div>
+      <div class="benefit__items">
+        <div class="benefit__item benefit__item--mr">
+          <div class="benefit__item-img">
+            <img src="img/ben-6.svg" alt="Бабушкины рецепты">
+          </div>
+          <div class="benefit__item-desc">
+            <h3 class="benefit__item-title">Бабушкины рецепты</h3>
+            <p class="benefit__item-text">Мы&nbsp;собрали самые потайные секреты наших бабушек и&nbsp;получили идеальные рецепты тортов</p>
+          </div>
+        </div>
+        <div class="benefit__item">
+          <div class="benefit__item-img">
+            <img src="img/ben-1.svg" alt="Только натуральное">
+          </div>
+          <div class="benefit__item-desc">
+            <h3 class="benefit__item-title">Только натуральное</h3>
+            <p class="benefit__item-text">Мы&nbsp;хотим радовать вкусной выпечкой при этом не&nbsp;используем ароматизаторы и&nbsp;усилители вкуса</p>
+          </div>
+        </div>
+        <div class="benefit__item benefit__item--mr">
+          <div class="benefit__item-img">
+            <img src="img/ben-5.svg" alt="Авторское выполнение">
+          </div>
+          <div class="benefit__item-desc">
+            <h3 class="benefit__item-title">Авторское выполнение</h3>
+            <p class="benefit__item-text">У&nbsp;каждого торта есть кусочек души наших пекарей, ведь они готовят их&nbsp;вручную</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="works">
+  <div class="works__container container">
+    <h2 class="title">Доставка и оплата</h2>
+    <div class="works__wrapper">
+      <div class="works__video">
+        <video controls class="video-js" id="video-1">
+          <source src="video/video.mp4" type="video/mp4">
+        </video>
+        <div class="works__video-desc">
+          <h3 class="works__video-title">Где и как мы работаем?</h3>
+          <p class="works__video-text">После просмотра видео вы узнаете: как мы создаем наши торты, кто делает нашу выпечку такой вкусной и где находится наш магаин.</p>
+        </div>
+      </div>
+      <div class="works__items">
+        <div class="works__item">
+          <h4 class="works__item-title">Заказ</h4>
+          <p class="works__item-text">Вы оставляете заявку и наш менеджер свяжется с вами, чтобы обговорить детали: удобное для вас
+            время доставки, предпочтения по вкусу</p>
+        </div>
+        <div class="works__item">
+          <h4 class="works__item-title">Оплата</h4>
+          <p class="works__item-text">Вы выбираете, когда оплачивать и как оплачивать
+            заказ. Мы предоставляем оплату через терминал,
+            оплату наличными или оплату на сайте</p>
+        </div>
+        <div class="works__item">
+          <h4 class="works__item-title">Доставка</h4>
+          <p class="works__item-text">Доставка осуществляется курьером по Москве
+            и Московской области с 9:00 до 21:00. Либо вы
+            можете сами забрать заказ с нашего магазина</p>
+        </div>
+        <div class="works__item">
+          <h4 class="works__item-title">Упаквока</h4>
+          <p class="works__item-text">Мы используем удобную и быстроразлагаемую
+            упаковку. Также есть возможность оформить
+            подарочную упаковку, открытку и букет цветов</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="rewiews">
+  <div class="rewiews_container container">
+    <h2 class="title">Отзывы</h2>
+
+    <div class="slider-container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card ">
+            <div class="rewiews__item">
+              <div class="rewiews__item-desc">
+                <h3 class="rewiews__item-name">Иван Иванов</h3>
+                <span class="rewiews__item-date">19.04.2021</span>
+              </div>
+              <p class="rewiews__item-text">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
+                рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
+                прекрасно, особенно порадовал эклер с ежевикой. </p>
+              <p class="rewiews__item-text">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
+                с сладости с данного мгазина.</p>
+            </div>
+          </div>
+          <div class="swiper-slide card ">
+            <div class="rewiews__item">
+              <div class="rewiews__item-desc">
+                <h3 class="rewiews__item-name">Иван Иванов</h3>
+                <span class="rewiews__item-date">19.04.2021</span>
+              </div>
+              <p class="rewiews__item-text">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
+                рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
+                прекрасно, особенно порадовал эклер с ежевикой. </p>
+              <p class="rewiews__item-text">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
+                с сладости с данного мгазина.</p>
+            </div>
+          </div>
+          <div class="swiper-slide card ">
+            <div class="rewiews__item">
+              <div class="rewiews__item-desc">
+                <h3 class="rewiews__item-name">Иван Иванов</h3>
+                <span class="rewiews__item-date">19.04.2021</span>
+              </div>
+              <p class="rewiews__item-text">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
+                рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
+                прекрасно, особенно порадовал эклер с ежевикой. </p>
+              <p class="rewiews__item-text">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
+                с сладости с данного мгазина.</p>
+            </div>
+          </div>
+          <div class="swiper-slide card ">
+            <div class="rewiews__item">
+              <div class="rewiews__item-desc">
+                <h3 class="rewiews__item-name">Иван Иванов</h3>
+                <span class="rewiews__item-date">19.04.2021</span>
+              </div>
+              <p class="rewiews__item-text">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
+                рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
+                прекрасно, особенно порадовал эклер с ежевикой. </p>
+              <p class="rewiews__item-text">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
+                с сладости с данного мгазина.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="slider-bottom">
+        <div class="slider-buttons">
+          <button class="swiper-button-prev"></button>
+          <div class="swiper-pagination"></div>
+          <button class="swiper-button-next"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="blog">
+  <div class="blog__container container">
+    <h2 class="title">Наш блог</h2>
+    <div class="blog__items">
+      <div class="blog__item">
+        <div class="blog__item-img">
+          <img src="img/cake.png" alt="Торт">
+        </div>
+        <div class="blog__item-desc">
+          <h3 class="blog__item-name">Новые вкусы леденцов в США</h3>
+          <p class="blog__item-text">Вот вы и дождались. Мы съездили в Америку
+            и выбрали для Вас самые популярные вкусы
+            леденцов, арбуз, мята, бекон, голубой сыр и матча!</p>
+          <a href="#" class="blog__item-link">Читать дальше</a>
+        </div>
+      </div>
+      <div class="blog__item">
+        <div class="blog__item-img">
+          <img src="img/cake.png" alt="Торт">
+        </div>
+        <div class="blog__item-desc">
+          <h3 class="blog__item-name">Новые вкусы леденцов в США</h3>
+          <p class="blog__item-text">Вот вы и дождались. Мы съездили в Америку
+            и выбрали для Вас самые популярные вкусы
+            леденцов, арбуз, мята, бекон, голубой сыр и матча!</p>
+          <a href="#" class="blog__item-link">Читать дальше</a>
+        </div>
+      </div>
+      <div class="blog__item">
+        <div class="blog__item-img">
+          <img src="img/cake.png" alt="Торт">
+        </div>
+        <div class="blog__item-desc">
+          <h3 class="blog__item-name">Новые вкусы леденцов в США</h3>
+          <p class="blog__item-text">Вот вы и дождались. Мы съездили в Америку
+            и выбрали для Вас самые популярные вкусы
+            леденцов, арбуз, мята, бекон, голубой сыр и матча!</p>
+          <a href="#" class="blog__item-link">Читать дальше</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="footer__container container">
+    <div class="footer-top">
+      <div class="footer-top__item">
+        <a href="#" class="logo">
+          <img src="img/logo.svg" alt="Логотип">
+        </a>
+        <div class="intro__social footer__social">
+          <a href="#" class="intro__social-link">
+            <svg>
+              <use xlink:href="img/sprite.svg#youtube"> </use>
+            </svg>
+          </a>
+          <a href="#" class="intro__social-link">
+            <svg>
+              <use xlink:href="img/sprite.svg#insta"> </use>
+            </svg>
+          </a>
+          <a href="#" class="intro__social-link">
+            <svg>
+              <use xlink:href="img/sprite.svg#vk"> </use>
+            </svg>
+          </a>
+          <a href="#" class="intro__social-link">
+            <svg>
+              <use xlink:href="img/sprite.svg#whatsapp"> </use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-top__nav">
+        <ul class="footer-top__list">
+          <li class="footer-top__item-title">Меню</li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">О нас</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Качество</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Доставка и оплата</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Отзывы</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Блог</a></li>
+        </ul>
+        <ul class="footer-top__list">
+          <li class="footer-top__item-title">Каталог</li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Наполеон</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Медовик</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Эклеры</a></li>
+        </ul>
+        <ul class="footer-top__list">
+          <li class="footer-top__item-title">Контакты</li>
+          <li class="footer-top__item"><a href="mailto:mail@mail.ru" class="footer-top__link">mail@mail.ru</a></li>
+          <li class="footer-top__item">График работы: с 9:00 до 21:00</li>
+          <li class="footer-top__item">
+            <address>Адрес: г. Москва, ул. Интересная 355</address>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-top__tel">
+        <a href="tel:+70000000000" class="footer-top__tel-number">
+          +7 (000) 000 00 00
+        </a>
+        <a href="#" class="footer-top__tel-link">Заказать звонок</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-bottom__text">© Особенный наполеон, 2021 — 2021</span>
+      <a href="#" class="footer-bottom__text">Соглашение на обработку персональных данных</a>
+      <a href="#" class="footer-bottom__text">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.12.1/lang/ru.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
