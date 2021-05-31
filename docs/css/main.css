@@ -370,6 +370,9 @@
       background-color: var(--color-shiraz);
       color: var(--color-white); }
 
+.product .product__item {
+  margin: 3px; }
+
 .product__mass {
   font: var(--font-text-date); }
   .product__mass .product__btn {
@@ -392,7 +395,7 @@
     grid-template-columns: repeat(1, 1fr); }
   .product {
     padding-bottom: 50px;
-    padding-top: 50px; }
+    padding-top: 25px; }
     .product .product__wrapper {
       padding-bottom: 50px; } }
 
@@ -619,7 +622,9 @@
   .works__item-title {
     font: var(--font-secondsubtitle); }
   .works__item-text {
-    font: var(--font-menu-text); } }
+    font: var(--font-menu-text); }
+  .works__video-desc {
+    margin-top: 20px; } }
 
 .video-js {
   border-radius: 20px;
@@ -670,7 +675,7 @@
   .rewiews__item {
     padding: 40px 30px;
     border-radius: 20px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
     margin: 5px; }
   .rewiews__item-desc {
     display: flex;
@@ -767,10 +772,12 @@
     padding-bottom: 50px; } }
 
 @media (max-width: 545px) {
+  .rewiews .title {
+    padding-bottom: 20px; }
   .rewiews__item-name {
     font: var(--font-num-medium); }
   .rewiews__item {
-    box-shadow: none; } }
+    padding: 30px 25px; } }
 
 .blog {
   padding-bottom: 150px; }
