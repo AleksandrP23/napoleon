@@ -688,7 +688,7 @@
   .rewiews__item {
     padding: 40px 30px;
     border-radius: 20px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     margin: 15px; }
   .rewiews__item-desc {
     display: flex;
