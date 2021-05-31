@@ -311,7 +311,6 @@
     font: var(--font-text); } }
 
 .product {
-  padding-bottom: 155px;
   padding-top: 130px; }
   .product .product__wrapper {
     padding-bottom: 150px; }
@@ -439,7 +438,9 @@
   .slider-container-2 .swiper-wrapper {
     display: flex;
     justify-content: initial;
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap; }
+  .product .product__item {
+    margin-left: 0; } }
 
 .benefit {
   padding-bottom: 150px; }
@@ -500,10 +501,6 @@
     margin-bottom: 50px; }
   .benefit__item:nth-child(3) {
     margin-bottom: 50px; } }
-
-@media (max-width: 991px) {
-  .benefit__items {
-    margin-left: 0; } }
 
 @media (max-width: 768px) {
   .benefit {
@@ -782,7 +779,8 @@
 
 @media (max-width: 768px) {
   .rewiews {
-    padding-bottom: 50px; } }
+    padding-bottom: 50px;
+    margin-top: 205px; } }
 
 @media (max-width: 545px) {
   .rewiews .title {
