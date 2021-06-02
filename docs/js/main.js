@@ -190,6 +190,37 @@ mobileSliders2();
 window.addEventListener('resize', function () {
   mobileSliders2();
 });
+var mySwiperIntro;
+var sliderIntro = document.querySelector('.slider-container-mob');
+
+function mobileSliderIntro() {
+  if (window.innerWidth <= 768 && sliderIntro.dataset.mobile == 'false') {
+    mySwiperIntro = new Swiper(sliderIntro, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      slideClass: 'intro-mob__item' // pagination: {
+      // 	el: '.swiper-pagination',
+      // 	clickable: true,
+      // },
+
+    });
+    sliderIntro.dataset.mobile = 'true';
+  }
+
+  if (window.innerWidth > 768) {
+    sliderIntro.dataset.mobile = 'false';
+
+    if (sliderIntro.classList.contains('swiper-container-initialized')) {
+      mySwiperIntro.destroy();
+    }
+  }
+}
+
+mobileSliderIntro();
+window.addEventListener('resize', function () {
+  mobileSliderIntro();
+});
 "use strict";
 
 videojs(document.querySelector('.video-js'), {
