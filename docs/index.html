@@ -18,16 +18,16 @@
     <div class="overlay"></div>
 <header class="header">
   <div class="container header__container">
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
       <img src="img/logo.svg" alt="Логотип">
     </a>
     <nav class="nav header__nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Наполеон</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Медовик</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Эклеры</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        <li class="nav__item"><a href="#in" class="nav__link">О нас</a></li>
+        <li class="nav__item"><a href="#nap" class="nav__link">Наполеон</a></li>
+        <li class="nav__item"><a href="#med" class="nav__link">Медовик</a></li>
+        <li class="nav__item"><a href="index.html#ec" class="nav__link">Эклеры</a></li>
+        <li class="nav__item"><a href="#con" class="nav__link">Контакты</a></li>
       </ul>
     </nav>
     <button class="burger" aria-label="Открыть меню">
@@ -49,12 +49,12 @@
 </header>
 
     <section class="intro">
-  <div class="intro__container container">
+  <div id="in" class="intro__container container">
     <div class="intro__pc">
       <div class="intro__desc">
         <h1 class="title intro__title">Натуральные торты ручной работы</h1>
         <p class="intro__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
-        <a href="#" class="intro__btn btn-reset">В каталог</a>
+        <a href="catalog.html" class="intro__btn btn-reset">В каталог</a>
       </div>
       <div class="intro__img">
         <img src="img/women.jpg" alt="Татьяна Варламова">
@@ -85,50 +85,34 @@
     </div>
 
     <div class="intro-mob">
-      <div class="slider-container-mob" data-mobile="false">
-        <div class="intro-mob__items swiper-wrapper">
+      <!-- <div class="swiper-container">-->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
           <div class="intro-mob__item">
-            <div class="intro-mob__img">
-              <img src="img/women.jpg" alt="Татьяна Варламова">
-              <!-- <span class="intro-mob__img-text">Шеф-кондитер Татьяна Варламова</span> -->
-            </div>
             <div class="intro-mob__desc">
               <h1 class="title intro-mob__title">Натуральные торты ручной работы</h1>
-              <p class="intro-mob__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
               <a href="#" class="intro-mob__btn btn-reset">В каталог</a>
             </div>
           </div>
+        </div>
+        <div class="swiper-slide">
           <div class="intro-mob__item">
-            <div class="intro-mob__img">
-              <img src="img/women.jpg" alt="Татьяна Варламова">
-              <!-- <span class="intro-mob__img-text">Шеф-кондитер Татьяна Варламова</span> -->
-            </div>
             <div class="intro-mob__desc">
               <h1 class="title intro-mob__title">Натуральные торты ручной работы</h1>
-              <p class="intro-mob__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
-              <a href="#" class="intro-mob__btn btn-reset">В каталог</a>
-            </div>
-          </div>
-          <div class="intro-mob__item">
-            <div class="intro-mob__img">
-              <img src="img/women.jpg" alt="Татьяна Варламова">
-              <!-- <span class="intro-mob__img-text">Шеф-кондитер Татьяна Варламова</span> -->
-            </div>
-            <div class="intro-mob__desc">
-              <h1 class="title intro-mob__title">Натуральные торты ручной работы</h1>
-              <p class="intro-mob__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
               <a href="#" class="intro-mob__btn btn-reset">В каталог</a>
             </div>
           </div>
         </div>
       </div>
+      <span class="intro__img-text">Шеф-кондитер Татьяна Варламова</span>
+      <div class="swiper-pagination-i"></div>
     </div>
   </div>
 </section>
 
     <section class="product">
   <div class="product__container container">
-    <div class="product__wrapper">
+    <div id="nap" class="product__wrapper">
       <h2 class="title">Наполеон</h2>
       <div class="slider-container-2" data-mobile="false">
         <div class="product__items swiper-wrapper">
@@ -403,8 +387,8 @@
       </div>
       <button class="product__btn btn-reset">Показать еще</button>
     </div>
-    <div class="product__wrapper">
-      <h2 class="title">Наполеон</h2>
+    <div id="med" class="product__wrapper">
+      <h2 class="title">Медовик</h2>
       <div class="slider-container-1" data-mobile="false">
         <div class="product__items swiper-wrapper">
           <div class="product__item">
@@ -678,8 +662,8 @@
       </div>
       <button class="product__btn btn-reset">Показать еще</button>
     </div>
-    <div class="product__wrapper">
-      <h2 class="title">Наполеон</h2>
+    <div id="ec" class="product__wrapper">
+      <h2 class="title">Эклеры</h2>
       <div class="slider-container" data-mobile="false">
         <div class="product__items swiper-wrapper">
           <div class="product__item">
@@ -1074,19 +1058,6 @@
     <div class="slider-container">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide card ">
-            <div class="rewiews__item">
-              <div class="rewiews__item-desc">
-                <h3 class="rewiews__item-name">Иван Иванов</h3>
-                <span class="rewiews__item-date">19.04.2021</span>
-              </div>
-              <p class="rewiews__item-text">Добрый день! Очень рад, что нашел такой магазин прямо за неделю до моего дня
-                рождения) Заказал на большую компанию друзей эклеры и торт на 2кг. Все было
-                прекрасно, особенно порадовал эклер с ежевикой. </p>
-              <p class="rewiews__item-text">Заказывал заранее и все привезли точно ко времени. Будем и дальше заказывать
-                с сладости с данного мгазина.</p>
-            </div>
-          </div>
           <div class="swiper-slide card ">
             <div class="rewiews__item">
               <div class="rewiews__item-desc">

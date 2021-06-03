@@ -18,16 +18,16 @@
     <div class="overlay"></div>
 <header class="header">
   <div class="container header__container">
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
       <img src="img/logo.svg" alt="Логотип">
     </a>
     <nav class="nav header__nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Наполеон</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Медовик</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Эклеры</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        <li class="nav__item"><a href="#in" class="nav__link">О нас</a></li>
+        <li class="nav__item"><a href="#nap" class="nav__link">Наполеон</a></li>
+        <li class="nav__item"><a href="#med" class="nav__link">Медовик</a></li>
+        <li class="nav__item"><a href="index.html#ec" class="nav__link">Эклеры</a></li>
+        <li class="nav__item"><a href="#con" class="nav__link">Контакты</a></li>
       </ul>
     </nav>
     <button class="burger" aria-label="Открыть меню">
@@ -49,12 +49,12 @@
 </header>
 
     <section class="intro">
-  <div class="intro__container container">
+  <div id="in" class="intro__container container">
     <div class="intro__pc">
       <div class="intro__desc">
         <h1 class="title intro__title">Натуральные торты ручной работы</h1>
         <p class="intro__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
-        <a href="#" class="intro__btn btn-reset">В каталог</a>
+        <a href="catalog.html" class="intro__btn btn-reset">В каталог</a>
       </div>
       <div class="intro__img">
         <img src="img/women.jpg" alt="Татьяна Варламова">
@@ -85,43 +85,27 @@
     </div>
 
     <div class="intro-mob">
-      <div class="slider-container-mob" data-mobile="false">
-        <div class="intro-mob__items swiper-wrapper">
+      <!-- <div class="swiper-container">-->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
           <div class="intro-mob__item">
-            <div class="intro-mob__img">
-              <img src="img/women.jpg" alt="Татьяна Варламова">
-              <!-- <span class="intro-mob__img-text">Шеф-кондитер Татьяна Варламова</span> -->
-            </div>
             <div class="intro-mob__desc">
               <h1 class="title intro-mob__title">Натуральные торты ручной работы</h1>
-              <p class="intro-mob__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
               <a href="#" class="intro-mob__btn btn-reset">В каталог</a>
             </div>
           </div>
+        </div>
+        <div class="swiper-slide">
           <div class="intro-mob__item">
-            <div class="intro-mob__img">
-              <img src="img/women.jpg" alt="Татьяна Варламова">
-              <!-- <span class="intro-mob__img-text">Шеф-кондитер Татьяна Варламова</span> -->
-            </div>
             <div class="intro-mob__desc">
               <h1 class="title intro-mob__title">Натуральные торты ручной работы</h1>
-              <p class="intro-mob__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
-              <a href="#" class="intro-mob__btn btn-reset">В каталог</a>
-            </div>
-          </div>
-          <div class="intro-mob__item">
-            <div class="intro-mob__img">
-              <img src="img/women.jpg" alt="Татьяна Варламова">
-              <!-- <span class="intro-mob__img-text">Шеф-кондитер Татьяна Варламова</span> -->
-            </div>
-            <div class="intro-mob__desc">
-              <h1 class="title intro-mob__title">Натуральные торты ручной работы</h1>
-              <p class="intro-mob__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
               <a href="#" class="intro-mob__btn btn-reset">В каталог</a>
             </div>
           </div>
         </div>
       </div>
+      <span class="intro__img-text">Шеф-кондитер Татьяна Варламова</span>
+      <div class="swiper-pagination-i"></div>
     </div>
   </div>
 </section>
@@ -208,6 +192,7 @@
                   <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                 </div>
               </div>
+              <button class="intro__btn intro__btn--pc btn-reset">В корзину</button>
               <div class="product__item-sale-mob">
                 <div class="catalog__prop-checkboxes">
                   <label class="custom-checkbox">
@@ -231,7 +216,6 @@
                     <input type="number" min="0" max="100" value="1" readonly class="card__num">
                     <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                   </div>
-
                   <button class="intro__btn btn-reset">В корзину</button>
                 </div>
               </div>
@@ -258,6 +242,7 @@
                   <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                 </div>
               </div>
+              <button class="intro__btn intro__btn--pc btn-reset">В корзину</button>
               <div class="product__item-sale-mob">
                 <div class="catalog__prop-checkboxes">
                   <label class="custom-checkbox">
@@ -281,7 +266,6 @@
                     <input type="number" min="0" max="100" value="1" readonly class="card__num">
                     <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                   </div>
-
                   <button class="intro__btn btn-reset">В корзину</button>
                 </div>
               </div>
@@ -308,6 +292,7 @@
                   <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
                 </div>
               </div>
+              <button class="intro__btn intro__btn--pc btn-reset">В корзину</button>
               <div class="product__item-sale-mob">
                 <div class="catalog__prop-checkboxes">
                   <label class="custom-checkbox">
