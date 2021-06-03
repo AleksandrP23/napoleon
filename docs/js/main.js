@@ -78,46 +78,43 @@ startPlay.forEach(function (item, index) {
 });
 "use strict";
 
-// const anchors = document.querySelectorAll('a.nav__link')
-// for (let anchor of anchors) {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault()
-//     const blockID = anchor.getAttribute('href')
-//     document.querySelector(blockID).scrollIntoView({
-//       behavior: 'smooth',
-//       block: 'start'
-//     })
-//   })
-// }
-// собираем все якоря; устанавливаем время анимации и количество кадров
-var anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-    animationTime = 300,
-    framesCount = 20;
-anchors.forEach(function (item) {
-  // каждому якорю присваиваем обработчик события
-  item.addEventListener('click', function (e) {
-    // убираем стандартное поведение
-    e.preventDefault(); // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
-    var coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset; // запускаем интервал, в котором
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
-    var scroller = setInterval(function () {
-      // считаем на сколько скроллить за 1 такт
-      var scrollBy = coordY / framesCount; // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
-      // и дно страницы не достигнуто
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-      if (scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-        // то скроллим на к-во пикселей, которое соответствует одному такту
-        window.scrollBy(0, scrollBy);
-      } else {
-        // иначе добираемся до элемента и выходим из интервала
-        window.scrollTo(0, coordY);
-        clearInterval(scroller);
-      } // время интервала равняется частному от времени анимации и к-ва кадров
+// Найти все ссылки начинающиеся на #
+var anchors = document.querySelectorAll('a[href^="#"]'); // Цикл по всем ссылкам
 
-    }, animationTime / framesCount);
-  });
-});
+var _iterator = _createForOfIteratorHelper(anchors),
+    _step;
+
+try {
+  var _loop = function _loop() {
+    var anchor = _step.value;
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault(); // Предотвратить стандартное поведение ссылок
+      // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+
+      var _goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'; // Плавная прокрутка до элемента с id = href у ссылки
+
+
+      document.querySelector(_goto).scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  };
+
+  for (_iterator.s(); !(_step = _iterator.n()).done;) {
+    _loop();
+  }
+} catch (err) {
+  _iterator.e(err);
+} finally {
+  _iterator.f();
+}
 "use strict";
 
 var slider = document.querySelector('.swiper-container');
