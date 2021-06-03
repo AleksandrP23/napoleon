@@ -37,16 +37,6 @@ overlay.addEventListener('click', function () {
   unlockScroll();
 });
 menu.addEventListener('click', function (e) {
-  // if (e.target.classList.contains('nav__link--drop')) {
-  // 	e.preventDefault();
-  // 	e.target.closest('.nav__list').classList.add('transformation');
-  // 	scrollTop();
-  // }
-  // if (e.target.classList.contains('mobile-back__link')) {
-  // 	e.preventDefault();
-  // 	e.target.closest('.nav').querySelector('.nav__list').classList.remove('transformation');
-  // 	scrollTop();
-  // }
   if (e.target.classList.contains('nav__link')) {
     // e.preventDefault();
     menu.classList.remove('open');
@@ -56,13 +46,6 @@ menu.addEventListener('click', function (e) {
 });
 "use strict";
 
-// let btn = document.getElementById('.btnnn');
-// let startPlayList = document.querySelector('.coun');
-// if (btn) {
-// 	btn.addEventListener('click', function () {
-// 		startPlayList.classList.toggle('none');
-// 	});
-// }
 var startPlay = document.querySelectorAll("#butt");
 var startPlayList = document.querySelectorAll(".coun");
 startPlay.forEach(function (item, index) {
@@ -141,11 +124,7 @@ if (document.querySelector('.slider-container')) {
         slidesPerView: 1.25,
         spaceBetween: 10,
         loop: true,
-        slideClass: 'product__item' // pagination: {
-        // 	el: '.swiper-pagination',
-        // 	clickable: true,
-        // },
-
+        slideClass: 'product__item'
       });
       sliders.dataset.mobile = 'true';
     }
@@ -174,11 +153,7 @@ if (document.querySelector('.slider-container-1')) {
         slidesPerView: 1.25,
         spaceBetween: 10,
         loop: true,
-        slideClass: 'product__item' // pagination: {
-        // 	el: '.swiper-pagination',
-        // 	clickable: true,
-        // },
-
+        slideClass: 'product__item'
       });
       sliders1.dataset.mobile = 'true';
     }
@@ -207,11 +182,7 @@ if (document.querySelector('.slider-container-2')) {
         slidesPerView: 1.25,
         spaceBetween: 10,
         loop: true,
-        slideClass: 'product__item' // pagination: {
-        // 	el: '.swiper-pagination',
-        // 	clickable: true,
-        // },
-
+        slideClass: 'product__item'
       });
       sliders2.dataset.mobile = 'true';
     }
