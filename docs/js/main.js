@@ -14,7 +14,6 @@ var unlockScroll = function unlockScroll() {
 };
 
 var initialMenu = function initialMenu() {
-  document.querySelector('.nav__list--dropdown').classList.remove('transformation');
   document.querySelector('.nav').querySelector('.nav__list').classList.remove('transformation');
   scrollTop();
 };
@@ -38,22 +37,18 @@ overlay.addEventListener('click', function () {
   unlockScroll();
 });
 menu.addEventListener('click', function (e) {
-  if (e.target.classList.contains('nav__link--drop')) {
-    e.preventDefault();
-    e.target.closest('.nav__list').classList.add('transformation');
-    e.target.closest('.nav__item').querySelector('.nav__list--dropdown').classList.add('transformation');
-    scrollTop();
-  }
-
-  if (e.target.classList.contains('mobile-back__link')) {
-    e.preventDefault();
-    e.target.closest('.nav__list--dropdown').classList.remove('transformation');
-    e.target.closest('.nav').querySelector('.nav__list').classList.remove('transformation');
-    scrollTop();
-  }
-
-  if (e.target.classList.contains('nav__link') && !e.target.classList.contains('nav__link--drop')) {
-    e.preventDefault();
+  // if (e.target.classList.contains('nav__link--drop')) {
+  // 	e.preventDefault();
+  // 	e.target.closest('.nav__list').classList.add('transformation');
+  // 	scrollTop();
+  // }
+  // if (e.target.classList.contains('mobile-back__link')) {
+  // 	e.preventDefault();
+  // 	e.target.closest('.nav').querySelector('.nav__list').classList.remove('transformation');
+  // 	scrollTop();
+  // }
+  if (e.target.classList.contains('nav__link')) {
+    // e.preventDefault();
     menu.classList.remove('open');
     overlay.classList.remove('open');
     unlockScroll();
@@ -76,45 +71,24 @@ startPlay.forEach(function (item, index) {
     item.style.cssText = "position:relative; opacity:0; z-index:-1; display:none";
   });
 });
+// if (document.querySelectorAll('a[href^="#"]')) {
+//   // Найти все ссылки начинающиеся на #
+// const anchors = document.querySelectorAll('a[href^="#"]')
+// // Цикл по всем ссылкам
+// for(let anchor of anchors) {
+//   anchor.addEventListener("click", function(e) {
+//     e.preventDefault() // Предотвратить стандартное поведение ссылок
+//     // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+//     const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+//     // Плавная прокрутка до элемента с id = href у ссылки
+//     document.querySelector(goto).scrollIntoView({
+//       behavior: "smooth",
+//       block: "start"
+//     })
+//   })
+// }
+// }
 "use strict";
-
-function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-// Найти все ссылки начинающиеся на #
-var anchors = document.querySelectorAll('a[href^="#"]'); // Цикл по всем ссылкам
-
-var _iterator = _createForOfIteratorHelper(anchors),
-    _step;
-
-try {
-  var _loop = function _loop() {
-    var anchor = _step.value;
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault(); // Предотвратить стандартное поведение ссылок
-      // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
-
-      var _goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'; // Плавная прокрутка до элемента с id = href у ссылки
-
-
-      document.querySelector(_goto).scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    });
-  };
-
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    _loop();
-  }
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
-}
 "use strict";
 
 var slider = document.querySelector('.swiper-container');
