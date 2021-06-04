@@ -1047,8 +1047,8 @@
   display: flex;
   margin-left: 60px; }
   .card__img img {
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit: contain;
+    object-fit: contain;
     width: 100%; }
 
 .card__desc {
@@ -1081,7 +1081,8 @@
   border-top: 1px solid var(--color-silver);
   display: flex;
   align-items: center;
-  padding-bottom: 75px; }
+  padding-bottom: 75px;
+  flex-wrap: wrap; }
 
 .catalog__caption {
   font: var(--font-price);
@@ -1195,5 +1196,49 @@
     font-weight: 500; }
   .card-see {
     padding-bottom: 0; } }
+
+.select {
+  width: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  padding: 3px 9px;
+  width: 60px;
+  font: var(--font-text-date);
+  color: var(--color-black);
+  border: 1px solid var(--color-shiraz);
+  border-radius: 30px; }
+
+.select::-ms-expand {
+  display: none; }
+
+.select:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.2); }
+
+.select-wrapper {
+  position: relative;
+  margin-left: 7px; }
+
+.select-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6.4px 3px 0px 3px;
+  border-color: #7e9bbd transparent transparent transparent;
+  pointer-events: none; }
+
+.form-group {
+  display: flex;
+  align-items: center; }
 
 /*# sourceMappingURL=main.css.map */

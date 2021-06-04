@@ -23,11 +23,15 @@
     </a>
     <nav class="nav header__nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="https://aleksandrp23.github.io/napoleon#in" class="nav__link">О нас</a></li>
-        <li class="nav__item"><a href="https://aleksandrp23.github.io/napoleon#nap" class="nav__link">Наполеон</a></li>
-        <li class="nav__item"><a href="https://aleksandrp23.github.io/napoleon#med" class="nav__link">Медовик</a></li>
-        <li class="nav__item"><a href="https://aleksandrp23.github.io/napoleon#ec" class="nav__link">Эклеры</a></li>
-        <li class="nav__item"><a href="https://aleksandrp23.github.io/napoleon#cont" class="nav__link">Контакты</a></li>
+        <!--
+          ---Пример---
+          <li class="nav__item"><a href="https://sait.ru#cont" class="nav__link">Контакты</a></li>
+        -->
+        <li class="nav__item"><a href="#in" class="nav__link">О нас</a></li>
+        <li class="nav__item"><a href="#nap" class="nav__link">Наполеон</a></li>
+        <li class="nav__item"><a href="#med" class="nav__link">Медовик</a></li>
+        <li class="nav__item"><a href="#ec" class="nav__link">Эклеры</a></li>
+        <li class="nav__item"><a href="#cont" class="nav__link">Контакты</a></li>
       </ul>
     </nav>
     <button class="burger" aria-label="Открыть меню">
@@ -294,7 +298,17 @@
                 пломбир и украшаем свежей ягодой.</span>
               <div class="product__item-sale">
                 <span>1050 Р</span>
-                <span class="product__mass">Выбрать вес <button class="product__btn btn-reset">1 кг</button> </span>
+                <div class="form-group">
+                  <span class="product__mass">Выбрать вес</span>
+                  <div class="select-wrapper">
+                      <select name="select-category" id="" class="select">
+                          <option value="1">1 кг</option>
+                          <option value="2">2 кг</option>
+                          <option value="3">3 кг</option>
+                          <option value="4">4 кг</option>
+                      </select>
+                  </div>
+              </div>
                 <button id="butt" class="product__item-btn btnnn btn-reset">
                   <img src="img/plus.svg" alt="">
                 </button>

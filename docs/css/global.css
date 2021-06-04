@@ -136,7 +136,8 @@ ul {
   pointer-events: none; }
 
 .custom-checkbox {
-  position: relative; }
+  position: relative;
+  margin-bottom: 18px; }
   .custom-checkbox__field {
     -webkit-appearance: none;
     -moz-appearance: none;
