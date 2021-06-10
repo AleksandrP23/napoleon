@@ -16,6 +16,8 @@
   --font-family: "Rubik", sans-serif;
   --font-price: 700 32px / 100% var(--font-family);
   --font-text-medium: 500 32px / 100% var(--font-family);
+  --font-text-form: 500 28px / 100% var(--font-family);
+  --font-form: 400 24px / 100% var(--font-family);
   --font-num-medium: 500 24px / 100% var(--font-family);
   --font-text-tel: 700 24px / 100% var(--font-family);
   --font-text-light: 300 20px / 150% var(--font-family);

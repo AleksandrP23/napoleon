@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Особенный наполеон</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="site-container">
+    <div class="overlay"></div>
+<header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="logo">
+      <img src="img/logo.svg" alt="Логотип">
+    </a>
+    <nav class="nav header__nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#in" class="nav__link">О нас</a></li>
+        <li class="nav__item"><a href="#nap" class="nav__link">Наполеон</a></li>
+        <li class="nav__item"><a href="#med" class="nav__link">Медовик</a></li>
+        <li class="nav__item"><a href="#ec" class="nav__link">Эклеры</a></li>
+        <li class="nav__item"><a href="#cont" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="burger" aria-label="Открыть меню">
+      <span></span>
+    </button>
+    <div class="cart header__cart">
+      <button class="btn-reset cart__btn">
+        <svg>
+          <use xlink:href="img/sprite.svg#phone"> </use>
+        </svg>
+      </button>
+      <button class="btn-reset cart__btn">
+        <svg>
+          <use xlink:href="img/sprite.svg#cart"> </use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+    <section class="intro">
+  <div id="in" class="intro__container container">
+    <div class="intro__pc">
+      <div class="intro__desc">
+        <h1 class="title intro__title">Натуральные торты ручной работы</h1>
+        <p class="intro__text">Каждый тортик создается с любовью<br> и&nbsp;содержит только натуральные ингредиенты</p>
+        <a href="catalog.html" class="intro__btn btn-reset">В каталог</a>
+      </div>
+      <div class="intro__img">
+        <img src="img/women.jpg" alt="Татьяна Варламова">
+        <span class="intro__img-text">Шеф-кондитер Татьяна Варламова</span>
+      </div>
+      <div class="intro__social">
+        <a href="#" class="intro__social-link">
+          <svg>
+            <use xlink:href="img/sprite.svg#youtube"> </use>
+          </svg>
+        </a>
+        <a href="#" class="intro__social-link">
+          <svg>
+            <use xlink:href="img/sprite.svg#insta"> </use>
+          </svg>
+        </a>
+        <a href="#" class="intro__social-link">
+          <svg>
+            <use xlink:href="img/sprite.svg#vk"> </use>
+          </svg>
+        </a>
+        <a href="#" class="intro__social-link">
+          <svg>
+            <use xlink:href="img/sprite.svg#whatsapp"> </use>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="intro-mob">
+      <!-- <div class="swiper-container">-->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="intro-mob__item">
+            <div class="intro-mob__desc">
+              <h1 class="title intro-mob__title">Натуральные торты ручной работы</h1>
+              <a href="#" class="intro-mob__btn btn-reset">В каталог</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="intro-mob__item">
+            <div class="intro-mob__desc">
+              <h1 class="title intro-mob__title">Натуральные торты ручной работы</h1>
+              <a href="#" class="intro-mob__btn btn-reset">В каталог</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="intro__img-text">Шеф-кондитер Татьяна Варламова</span>
+      <div class="swiper-pagination-i"></div>
+    </div>
+  </div>
+</section>
+
+<ul>
+  <li>
+    <a href="ya.ru"></a>
+  </li>
+  <li>
+    <a href="ya.ru"></a>
+  </li>
+  <li>
+    <a href="ya.ru"></a>
+  </li>
+</ul>
+    <section class="maps">
+  <div class="maps__container container">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--active">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="maps__items">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A56c0032582ddfb7ef885a2a72573f2c24f0d58c6f4b98e69badf5379f9dc8570&amp;source=constructor" width="1320" height="500" frameborder="0"></iframe>
+    </div>
+    <ul class="maps__items maps__items-fl">
+      <li class="maps__items-item">
+        Почта
+        <a class="maps__items-link" href="mailto:mail.mail.ru">mail.mail.ru</a>
+      </li>
+      <li class="maps__items-item">
+        График работы
+        <span class="maps__items-link">C 9:00 до 21:00</span>
+      </li>
+      <li class="maps__items-item">
+        Адрес:
+        <address class="maps__items-link">г. Москва, ул. Интересная, 455</address>
+      </li>
+      <li class="maps__items-item">
+        Телефон
+        <a class="maps__items-link" href="tel:+70000000000">+7 000 000 00 00</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div id="cont" class="footer__container container">
+    <div class="footer-top">
+      <div class="footer-top__item">
+        <a href="#" class="logo">
+          <img src="img/logo.svg" alt="Логотип">
+        </a>
+        <div class="intro__social footer__social">
+          <a href="#" class="intro__social-link">
+            <svg>
+              <use xlink:href="img/sprite.svg#youtube"> </use>
+            </svg>
+          </a>
+          <a href="#" class="intro__social-link">
+            <svg>
+              <use xlink:href="img/sprite.svg#insta"> </use>
+            </svg>
+          </a>
+          <a href="#" class="intro__social-link">
+            <svg>
+              <use xlink:href="img/sprite.svg#vk"> </use>
+            </svg>
+          </a>
+          <a href="#" class="intro__social-link">
+            <svg>
+              <use xlink:href="img/sprite.svg#whatsapp"> </use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <nav class="footer-top__nav">
+        <ul class="footer-top__list">
+          <li class="footer-top__item-title">Меню</li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">О нас</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Качество</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Доставка и оплата</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Отзывы</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Блог</a></li>
+        </ul>
+        <ul class="footer-top__list">
+          <li class="footer-top__item-title">Каталог</li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Наполеон</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Медовик</a></li>
+          <li class="footer-top__item"><a href="#" class="footer-top__link">Эклеры</a></li>
+        </ul>
+        <ul class="footer-top__list">
+          <li class="footer-top__item-title">Контакты</li>
+          <li class="footer-top__item"><a href="mailto:mail@mail.ru" class="footer-top__link">mail@mail.ru</a></li>
+          <li class="footer-top__item">График работы: с 9:00 до 21:00</li>
+          <li class="footer-top__item">
+            <address>Адрес: г. Москва, ул. Интересная 355</address>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-top__tel">
+        <a href="tel:+70000000000" class="footer-top__tel-number">
+          +7 (000) 000 00 00
+        </a>
+        <a href="#" class="footer-top__tel-link">Заказать звонок</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-bottom__text">© Особенный наполеон, 2021 — 2021</span>
+      <a href="#" class="footer-bottom__text">Соглашение на обработку персональных данных</a>
+      <a href="#" class="footer-bottom__text">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.12.1/lang/ru.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
