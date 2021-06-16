@@ -44,16 +44,15 @@ menu.addEventListener('click', function (e) {
     unlockScroll();
   }
 });
+// var startPlay = document.querySelectorAll("#butt");
+// var startPlayList = document.querySelectorAll(".coun");
+// startPlay.forEach((item, index) => {
+//   item.addEventListener("click", function () {
+//     startPlayList[index].classList.toggle("block");
+//     item.style.cssText = "position:relative; opacity:0; z-index:-1; display:none";
+//   });
+// });
 "use strict";
-
-var startPlay = document.querySelectorAll("#butt");
-var startPlayList = document.querySelectorAll(".coun");
-startPlay.forEach(function (item, index) {
-  item.addEventListener("click", function () {
-    startPlayList[index].classList.toggle("block");
-    item.style.cssText = "position:relative; opacity:0; z-index:-1; display:none";
-  });
-});
 "use strict";
 
 function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
@@ -221,11 +220,5 @@ if (document.querySelector('.video-js')) {
     language: 'ru'
   });
 }
-/**
-  * название функции
-  *
-  * @param {number} first - первое число
-  * @returns {number}
-  */
 "use strict";
 //# sourceMappingURL=main.js.map
